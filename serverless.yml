@@ -1,11 +1,11 @@
-service: my-store-app
+service: first-aws-bucket-suhas-epam
 
 frameworkVersion: "3"
 
 provider:
   name: aws
   runtime: nodejs14.x
-  region: eu-west-1
+  region: ap-south-1
   # setup profile for AWS CLI.
   # profile: node-aws
 
@@ -19,7 +19,7 @@ plugins:
 
 custom:
   client:
-    bucketName: my-store-app
+    bucketName: first-aws-bucket-suhas-epam
     distributionFolder: dist
   s3BucketName: ${self:custom.client.bucketName}
 
@@ -36,7 +36,6 @@ resources:
       Type: AWS::S3::Bucket
       Properties:
         BucketName: ${self:custom.s3BucketName}
-        AccessControl: PublicRead
         WebsiteConfiguration:
           IndexDocument: index.html
           ErrorDocument: index.html
