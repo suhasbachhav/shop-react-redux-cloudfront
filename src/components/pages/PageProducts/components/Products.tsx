@@ -49,6 +49,7 @@ function getImageUrl(name: string) {
     case name.toLowerCase().includes("smart tv"):
       return "https://images.pexels.com/photos/7947958/pexels-photo-7947958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
     case name.toLowerCase().includes("camera"):
+    case name.toLowerCase().includes("cam"):
     case name.toLowerCase().includes("dslr"):
     case name.toLowerCase().includes("photography"):
     case name.toLowerCase().includes("gopro"):
@@ -65,6 +66,7 @@ function getImageUrl(name: string) {
     case name.toLowerCase().includes("projector"):
       return "https://images.pexels.com/photos/2736135/pexels-photo-2736135.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
     case name.toLowerCase().includes("home theater"):
+    case name.toLowerCase().includes("speaker"):
       return "https://images.pexels.com/photos/8133000/pexels-photo-8133000.jpeg?auto=compress&cs=tinysrgb&w=1200";
     case name.toLowerCase().includes("charger"):
     case name.toLowerCase().includes("power bank"):
