@@ -12,6 +12,10 @@ export default defineConfig({
       "~": path.resolve(__dirname, "src"),
     },
   },
+  build: {
+    outDir: './infra/resources/build',
+    emptyOutDir: true,
+  },
   plugins: [react()],
   test: {
     globals: true,
